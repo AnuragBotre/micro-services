@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+
+#Add this it will tell eureka-server it is started as server and not to register service or fetch registry
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring :
+  application :
+    name : SERVICE-REGISTRY
