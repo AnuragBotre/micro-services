@@ -6,4 +6,4 @@
 output/**
 *.class
 # Project exclude paths
-/target/
+target/
