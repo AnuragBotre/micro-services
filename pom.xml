@@ -62,6 +62,7 @@
         <module>user-service</module>
         <module>service-registry</module>
         <module>cloud-gateway</module>
+        <module>cloud-configuration-server</module>
     </modules>
 
 </project>
