@@ -4,9 +4,12 @@ server:
 spring:
   application:
     name: CONFIG-SERVER
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/AnuragBotre/micro-services/tree/master/cloud-configuration-server/src/main/resources/config.yml
-          clone-on-start: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka
+  instance:
+    hostname: localhost
