@@ -63,6 +63,7 @@
         <module>service-registry</module>
         <module>cloud-gateway</module>
         <module>cloud-configuration-server</module>
+        <module>mongodb-application</module>
     </modules>
 
 </project>
