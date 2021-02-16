@@ -7,4 +7,4 @@ RUN mkdir -p /home/app
 
 COPY ./mongodb-application/target/mongodb-application-1.0-SNAPSHOT.jar /home/app
 
-CMD ["java","-jar","/home/app/mongodb-application-1.0-SNAPSHOT.jar","--spring.data.mongodb.username=${MONGO_INITDB_ROOT_USERNAME} --spring.data.mongodb.password=${MONGO_INITDB_ROOT_PASSWORD} "]
+CMD ["java","-jar","/home/app/mongodb-application-1.0-SNAPSHOT.jar","--spring.data.mongodb.username=${MONGO_INITDB_ROOT_USERNAME}","--spring.data.mongodb.password=${MONGO_INITDB_ROOT_PASSWORD}","--spring.data.mongodb.host=${ME_CONFIG_MONGODB_SERVER}"]

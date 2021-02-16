@@ -7,7 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MongoDBApplicationRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(MongoDBApplicationRunner.class);
+        System.out.println("---------------------------------------");
+        for (String arg : args) {
+            System.out.println(arg);
+        }
+        System.out.println("---------------------------------------");
+        SpringApplication.run(MongoDBApplicationRunner.class,args);
     }
 
 }
